@@ -1,0 +1,85 @@
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" ftp_hostname="ftp://homepages.huddnewcoll.ac.uk" ftp_rootfolder="/Oriental Code" exportTarget="FTP" domain="homepages.huddnewcoll.ac.uk/15002691" resolutions="1x" timestamp="1491216837900">
+  <folder name="css">
+    <file name="site_global.css" crc="4052507572"/>
+    <file name="master_master.css" crc="357156647" ref="css:index:javascript:html:external"/>
+    <file name="css.css" crc="352571319" ref="css"/>
+    <file name="index.css" crc="268256805" ref="index"/>
+    <file name="javascript.css" crc="188676323" ref="javascript"/>
+    <file name="html.css" crc="405297722" ref="html"/>
+    <file name="external.css" crc="4009507850" ref="external"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="196614522" ref="index:html:css:javascript:external"/>
+    <file name="museutils.js" crc="275725342" ref="index:html:css:javascript:external"/>
+    <file name="jquery.watch.js" crc="3999102769" ref="index:html:css:javascript:external"/>
+    <file name="jquery.musemenu.js" crc="4042164668" ref="index:html:css:javascript:external"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:html:css:javascript:external"/>
+    <file name="webpro.js" crc="3883484123" ref="html:css"/>
+    <file name="musewpdisclosure.js" crc="404074387" ref="html:css"/>
+    <file name="pie.js" crc="3827607177" ref="css"/>
+  </folder>
+  <folder name="images">
+    <file name="logo.png" crc="201143979" seo="true" ref="index:html:css:javascript:external"/>
+    <file name="index html img.png" crc="3849727398" seo="true" ref="index"/>
+    <file name="index css img.png" crc="4045909031" seo="true" ref="index"/>
+    <file name="index js img.png" crc="325297267" seo="true" ref="index"/>
+    <file name="html title.png" crc="4222900196" seo="true" ref="html"/>
+    <file name="example txt.png" crc="4167247118" seo="true" ref="html"/>
+    <file name="structure title.png" crc="3930378393" seo="true" ref="html"/>
+    <file name="html structure img-crop-u483.jpg" crc="227587787" ref="html"/>
+    <file name="div title.png" crc="446644284" seo="true" ref="html"/>
+    <file name="html div img-crop-u508.jpg" crc="3848239672" ref="html"/>
+    <file name="text title.png" crc="326378976" seo="true" ref="html"/>
+    <file name="html text img-crop-u560.jpg" crc="3838810039" ref="html"/>
+    <file name="css title.png" crc="243779112" seo="true" ref="css"/>
+    <file name="css insert title.png" crc="185028168" seo="true" ref="css"/>
+    <file name="css inline title.png" crc="4093695505" seo="true" ref="css"/>
+    <file name="css inline img.jpg" crc="359311755" seo="true" ref="css"/>
+    <file name="css embedded title.png" crc="355757148" seo="true" ref="css"/>
+    <file name="css embedded img.jpg" crc="4184464729" seo="true" ref="css"/>
+    <file name="css external title.png" crc="116011137" seo="true" ref="css"/>
+    <file name="css external img.jpg" crc="11130371" seo="true" ref="css"/>
+    <file name="css selectors title.png" crc="189203186" seo="true" ref="css"/>
+    <file name="css type title.png" crc="248400645" seo="true" ref="css"/>
+    <file name="css type img.jpg" crc="440996028" seo="true" ref="css"/>
+    <file name="css classes title.png" crc="449793936" seo="true" ref="css"/>
+    <file name="css classes img.jpg" crc="4059327484" seo="true" ref="css"/>
+    <file name="css id title.png" crc="259414433" seo="true" ref="css"/>
+    <file name="css id img.jpg" crc="342898714" seo="true" ref="css"/>
+    <file name="css box model title.png" crc="18275984" seo="true" ref="css"/>
+    <file name="css box model img.jpg" crc="4158724779" seo="true" ref="css"/>
+    <file name="css uses title.png" crc="3996653562" seo="true" ref="css"/>
+    <file name="css background colour title.png" crc="211787731" seo="true" ref="css"/>
+    <file name="css background colour img.jpg" crc="4101277734" seo="true" ref="css"/>
+    <file name="css background image title.png" crc="4074456424" seo="true" ref="css"/>
+    <file name="css background image img.jpg" crc="436420283" seo="true" ref="css"/>
+    <file name="css text features title.png" crc="284386987" seo="true" ref="css"/>
+    <file name="css text features img.jpg" crc="400466105" seo="true" ref="css"/>
+    <file name="css borders padding title.png" crc="19408231" seo="true" ref="css"/>
+    <file name="css borders padding img1.jpg" crc="4096553621" seo="true" ref="css"/>
+    <file name="css borders padding img2.jpg" crc="161558275" seo="true" ref="css"/>
+    <file name="css borders padding img3.jpg" crc="196565293" seo="true" ref="css"/>
+    <file name="css heading styles title.png" crc="4002547064" seo="true" ref="css"/>
+    <file name="css positioning title.png" crc="3877172191" seo="true" ref="css"/>
+    <file name="css heading styles img1.jpg" crc="4107079583" seo="true" ref="css"/>
+    <file name="css heading styles img2.jpg" crc="4024672281" seo="true" ref="css"/>
+    <file name="css positioning img1.jpg" crc="35468321" seo="true" ref="css"/>
+    <file name="css positioning img2.jpg" crc="3988606640" seo="true" ref="css"/>
+    <file name="js title.png" crc="4197465626" seo="true" ref="javascript"/>
+    <file name="css_external title.png" crc="60504725" seo="true" ref="external"/>
+  </folder>
+  <file name="index.html" crc="6853416" seo="true" mt="1488989178928" redirect="true"/>
+  <file name="html.html" crc="3807593907" seo="true" mt="1489501575889" redirect="true"/>
+  <file name="css.html" crc="47982910" seo="true" mt="1491213140436" redirect="true"/>
+  <file name="javascript.html" crc="3869142501" seo="true" mt="1491216753240" redirect="true"/>
+  <file name="external.html" crc="55531471" seo="true" mt="1490795859159" redirect="true"/>
+  <linkData>
+    <DESKTOP>
+      <page name="HTML" filename="html.html" muse_href="page:U80"/>
+      <page name="Javascript" filename="javascript.html" muse_href="page:U92"/>
+      <page name="Home" filename="index.html" muse_href="page:U74"/>
+      <page name="External" filename="external.html" muse_href="page:U1073"/>
+      <page name="CSS" filename="css.html" muse_href="page:U86"/>
+    </DESKTOP>
+  </linkData>
+</manifest>
