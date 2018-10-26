@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Booking|Amazement Park</title>
+<style type="text/css">
+body {
+	background-color:#460001;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#FFFFFF;
+}
+#heading {
+	position: fixed;
+	height: 106px;
+	width: 100%;
+	left: 0;
+	top: 2px;
+	z-index: 1;
+}
+#Title {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: capitalize;
+	position: absolute;
+	height: 138px;
+	width: 998px;
+	left: 407px;
+	top: 280px;
+}
+#mainimage {
+	position: absolute;
+	height: 190px;
+	width: 100%;
+	top: 50px;
+	text-align:center;
+}
+#content {
+	position: absolute;
+	height: 525px;
+	width: 100%;
+	top: 241px;
+}
+#logo {
+	position: absolute;
+	height: 87px;
+	width: 181px;
+	left: 410px;
+	top: 1250px;
+}
+#footer {
+	position: absolute;
+	height: 89px;
+	width: 814px;
+	left: 593px;
+	top: 1251px;
+}
+#homebut {
+	position:absolute;
+	left:248px;
+	top:82px;
+	width:149px;
+	height:49px;
+	z-index:2;
+}
+#ticketbut {
+	position:absolute;
+	left:395px;
+	top:82px;
+	width:149px;
+	height:49px;
+	z-index:2;
+}
+#ridebut {
+	position:absolute;
+	left:546px;
+	top:82px;
+	width:149px;
+	height:49px;
+	z-index:2;
+}
+#activitybut {
+	position:absolute;
+	left:695px;
+	top:82px;
+	width:149px;
+	height:49px;
+	z-index:2;
+}
+#contactbut {
+	position: absolute;
+	left: 844px;
+	top: 82px;
+	width: 149px;
+	height: 49px;
+	z-index: 2;
+}
+#navbar {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	background-color:#0720B5;
+	position:fixed;
+	top:0;
+	left:170px;
+	width:100%;
+}
+li {
+	float:left;
+}
+li a {
+	display:block;
+	color:white;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+}
+li a:hover:not(.active) {
+	background-color:#000000;
+}
+.active {
+	background-color:#8F0002;
+}
+table {
+	position:absolute;
+	top:75px;
+	left:100px;
+}
+label {
+	font-size:25px;
+}
+#submit {
+	position:absolute;
+	left:275px;
+	top:160px
+}
+#table_title {
+	position:absolute;
+	top:5px;
+	left:300px;
+	size:20px;
+}
+#book_information_title {
+	position:absolute;
+	left:1100px;
+	top:5px;
+	font-size:20px;
+}
+#book_information {
+	position:absolute;
+	left:900px;
+	top:75px;
+	font-size:20px;
+}
+</style>
+</head>
+
+<body>
+	<div id="heading">
+    <a href="Index.html"><img src="amazelogo.png" alt="Logo" height="75"/></a>
+    <ul id="navbar">
+    	<li><a href="Index.html">Home</a></li>
+        <li><a href="Rides.html">Rides</a></li>
+        <li><a href="Booking.html" class="active">Booking</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+    </div>
+	<div id="mainimage"><img src="FinishedBanner.png" width="998" height="189" alt="Banner"/></div>
+	<div id="content">
+    	<img src="contentbackground.jpg" alt="content" width="100%" height="525px">
+        <div id="table_title">
+        <h1>Book Here</h1>
+        </div>
+    	<form id="form1" name="form1" method="post">
+    	  <table width="660" border="1.5">
+  <tbody>
+    <tr>
+      <td width="421" height="40"><label for="type">1. What type of ticket?</label></td>
+      <td width="223">
+      	<select name="type">
+        <option value="normal">Normal</option>
+        <option value="fast">Fast Track</option>
+        <option value="premium">Premium</option>
+        <option value="full">Full Week Ticket</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="adults">2. How many Adults(13+)?</label></td>
+      <td>
+     	<select name="adults">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+       </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="child">3. How many Children(3+)?</label></td>
+      <td>
+     	<select name="child">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+       </select>
+      </td>
+    </tr>
+    <tr>
+     <td height="34"><label for="email">4. Email Address</label></td>
+     <td><input type="text" name="email" id="email"></td>
+    </tr>
+    <tr>
+    <td height="30" colspan=2><input type="submit" name="submit" id="submit" value="Submit"></td>
+    </tr>
+  </tbody>
+</table>
+  	  </form>
+    <div id="book_information_title">
+     <h1>Ticket & Ticket Prices</h1>
+    </div>
+    <div id="book_information">
+     <h2>Types of tickets</h2>
+     <p>Normal = One day ticket for one person</p>
+     <p>Fast Track = One day ticket for one person with fast track access (+£5)</p>
+     <p>Premium = 3 day ticket for one person with fast track (+£10)</p>
+     <p>Full Week = 7 day ticket for one person with fast track (+£25)</p>
+     <h2>Ticket Prices</h2>
+     <p>Adults (13+) = £14.99</p>
+     <p>Children (3+) = £6.99</p>
+     <p>Infants (0-3) = Free (Must be accompanied by an adult)</p>
+    </div>
+    </div>
+</body>
+</html>
