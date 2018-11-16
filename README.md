@@ -1,2 +1,2 @@
 # College Work
-This is all the college work that I have accomplished
+This repository contains all the files that I have used and was graded on during my college course. During the course I completed 5 websites, with trials and errors, allowing my to hone my skills in all aspects of media creation. In this time I was able to improve and find new skills in animation, asset creation and expanding my knowledge on the various programs out there used for website creation. From Dreamweaver to handcoding websites, I was able to create a large variety of different websites using different tools and different methods of achieving amazing results (all whilst continiously failing but trying again and again).
