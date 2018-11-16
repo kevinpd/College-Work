@@ -1,0 +1,56 @@
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" ftp_hostname="ftp://homepages.huddnewcoll.ac.uk" ftp_rootfolder="/" exportTarget="FTP" domain="homepages.huddnewcoll.ac.uk/15002691" resolutions="1x" timestamp="1488290307314">
+  <folder name="css">
+    <file name="site_global.css" crc="3824509780"/>
+    <file name="master_interior.css" crc="4291318258" ref="menu:gallery:blog:contact"/>
+    <file name="master_main.css" crc="3841354953" ref="menu:gallery:blog:contact:index"/>
+    <file name="menu.css" crc="530074193" ref="menu"/>
+    <file name="gallery.css" crc="530074193" ref="gallery"/>
+    <file name="blog.css" crc="530074193" ref="blog"/>
+    <file name="contact.css" crc="428667776" ref="contact"/>
+    <file name="iefonts_contact.css" crc="3968802175" ref="contact"/>
+    <file name="index.css" crc="91660244" ref="index"/>
+    <file name="iefonts_index.css" crc="514055787" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="196614522" ref="index:menu:gallery:blog:contact"/>
+    <file name="museutils.js" crc="275725342" ref="index:menu:gallery:blog:contact"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="185257658" ref="index"/>
+    <file name="jquery.musemenu.js" crc="4042164668" ref="index:menu:gallery:blog:contact"/>
+    <file name="jquery.watch.js" crc="3999102769" ref="index:menu:gallery:blog:contact"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:menu:gallery:blog:contact"/>
+    <file name="webpro.js" crc="3883484123" ref="contact"/>
+    <file name="form_check.php" crc="3932029206" ref="contact"/>
+    <file name="form_throttle.php" crc="314685628" ref="contact"/>
+    <file name="form_process.php" crc="401030677" ref="contact"/>
+    <file name="form-u354.php" crc="284230540" ref="contact"/>
+  </folder>
+  <folder name="images">
+    <file name="img-hero-salad.jpg" crc="106093649" ref="index"/>
+    <file name="logo-landing.png" crc="3765472626" seo="true" ref="index"/>
+    <file name="img-baking.jpg" crc="3997507155" seo="true" ref="index"/>
+    <file name="img-dinner.jpg" crc="329183304" seo="true" ref="index"/>
+    <file name="img-drinks.jpg" crc="3922149720" seo="true" ref="index"/>
+    <file name="banner-normal.png" crc="497791043" ref="index"/>
+    <file name="banner-hover.png" crc="422864924" ref="index"/>
+    <file name="banner-down.png" crc="422864924" ref="index"/>
+    <file name="logo-interior-crop-u138.png" crc="3887001399" ref="menu:gallery:blog:contact"/>
+    <file name="u356-17.png" crc="339615781" ref="contact"/>
+    <file name="u356-17-r.png" crc="3972775235" ref="contact"/>
+    <file name="u356-17-m.png" crc="3972775235" ref="contact"/>
+    <file name="u356-17-fs.png" crc="345197156" ref="contact"/>
+  </folder>
+  <file name="index.html" crc="4169989596" seo="true" mt="1488288402290" redirect="true"/>
+  <file name="menu.html" crc="192937802" seo="true" mt="1488196924642" redirect="true"/>
+  <file name="gallery.html" crc="2689175" seo="true" mt="1488196924642" redirect="true"/>
+  <file name="blog.html" crc="366879879" seo="true" mt="1488196924642" redirect="true"/>
+  <file name="contact.html" crc="24742950" seo="true" mt="1488288919211" redirect="true"/>
+  <linkData>
+    <DESKTOP>
+      <page name="Contact" filename="contact.html" muse_href="page:U98"/>
+      <page name="Menu" filename="menu.html" muse_href="page:U80"/>
+      <page name="Blog" filename="blog.html" muse_href="page:U92"/>
+      <page name="Home" filename="index.html" muse_href="page:U74"/>
+      <page name="Gallery" filename="gallery.html" muse_href="page:U86"/>
+    </DESKTOP>
+  </linkData>
+</manifest>
