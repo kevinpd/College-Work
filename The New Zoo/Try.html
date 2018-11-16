@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html> <!--Beginning of HTML-->
+    
+<head> <!--Beginning of Head-->
+    <title>The New Zoo| Home</title> <!--Tab Title-->
+    <link type="text/css" rel="stylesheet" href="Styles/Base.css"> <!--Link to external CSS file-->
+    
+</head> <!--End of Head-->
+    
+<body onload="footerclock()"> <!--Beginning of Body-->
+    
+    <div id="navbar"> <!--Beginning of Navbar-->
+        <a href="Index.html"><img src="Assets/Logo.png" alt="Logo" id="navlogo"/></a>
+        
+        <ul> <!--Beginning of Links-->
+            <a href="Index.html"><li class="active">HOME</li></a>
+            <a href="About.html"><li>ABOUT</li></a>
+            <a href="Gallery.html"><li>GALLERY</li></a>
+            <a href="Animals.html"><li>ANIMALS</li></a>
+            <a href="Contact.html"><li>CONTACT US</li></a>
+        </ul> <!--End of Links-->
+
+            <button id="loginbtn" type="button" onclick="loginbtn()">Log in</button>
+        </div> <!--End of login button-->
+    </div> <!--End of Navbar-->
+    
+    <div id="footer"> <!--Beginning of Footer-->
+        <div id="footersup"> <!--Beginning of Footer support-->
+            <img src="Assets/Logo.png" alt="Footer Logo" style="width:87px; height:87px;"/>
+            <h2 id="emailsup">Support@thenewzoo.co.uk</h2>
+        </div> <!--End of Footer support-->
+        
+        <div id="footercr"> <!--Beginning of Footer Clock-->
+            <p id="footerclocktxt"></p>
+            <p> 2015 Copyright &copy; The New Zoo.All Rights Reserved</p>
+        </div> <!--End of Footer Clock-->
+    </div> <!--End of Footer-->
+    
+        <div id="loginlb"></div>
+        <form name="login" id="loginform" style="display:none;"> <!--Beginning of login form-->
+            Username: <input type="text" name="userid">
+            <br>
+            Password: <input type="password" name="pswrd">
+            <br>
+            <input type="button" onclick="check(this.form)" value="Login">
+            <input type="reset" value="Reset">
+            <input type="button" onclick="loginext()" value="Cancel">
+        </form> <!--End of login form-->
+    
+  <script> //Beginning of login check
+    function check(form) { 
+        if(form.userid.value == "Username" , "username" && form.pswrd.value == "password123") {
+            window.alert("Well done you were correct")
+        }
+        else {
+            window.alert("Incorrect username or password")
+            }
+    }  </script> <!--End of login check-->
+    
+<script>
+    function loginbtn() {
+        var i = window.document.getElementById('loginform');
+        var u = window.document.getElementById('loginlb');
+        if (i.style.display == 'none') {
+            i.style.display = 'block';
+            u.style.display = 'block';
+        }
+        
+    }
+</script>
+    
+<script>
+    function loginext() {
+        var i = window.document.getElementById('loginform');
+        var u = window.document.getElementById('loginlb');
+        if (i.style.display == 'block') {
+            i.style.display = 'none';
+            u.style.display = 'none';
+        }
+        
+    } 
+</script>
+    
+<script type="text/javascript"> //Beginning of footer clock
+    function footerclock() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        m = checkTime(m);
+        window.document.getElementById('footerclocktxt').innerHTML =
+        h + ":" + m;
+        var t = setTimeout(footerclock, 100);
+    }
+    </script>
+    <script type="text/javascript">
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i}; 
+        return i;
+    }
+    </script> <!--End of footer clock-->
+
+</body> <!--End of Body-->
+    
+</html>
+<!--End of HTML-->

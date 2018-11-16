@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html> <!--Beginning of HTML-->
+    
+<head> <!--Beginning of Head-->
+    <title>The New Zoo| About</title> <!--Tab Title-->
+    <link type="text/css" rel="stylesheet" href="Styles/Base.css"> <!--Link to external CSS file-->
+    <style>
+        #contentbox {
+            position: absolute;
+            top: 5%;
+            width: 100%;
+            height: 1280px;
+            text-align: left;
+        }
+        .image {
+            width: 60%;
+            min-width: 200px;
+        }
+    </style>
+</head> <!--End of Head-->
+    
+<body onload="footerclock()"> <!--Beginning of Body-->
+    
+    <div id="navbar"> <!--Beginning of Navbar-->
+        <a href="Index.html"><img src="Assets/Logo.png" alt="Logo" id="navlogo"/></a>
+        
+        <ul> <!--Beginning of Links-->
+            <a href="Index.html"><li>HOME</li></a>
+            <a href="About.html"><li class="active">ABOUT</li></a>
+            <a href="Gallery.html"><li>GALLERY</li></a>
+            <a href="Animals.html"><li>ANIMALS</li></a>
+            <a href="Contact.html"><li>CONTACT US</li></a>
+        </ul> <!--End of Links-->
+
+            <button id="loginbtn" type="button" onclick="loginbtn()">Log in</button>
+        </div> <!--End of login button-->
+    </div> <!--End of Navbar-->
+    
+    <div id="backbox" style="height:1280px;"> <!--Beginning of Content background box-->
+        <div id="contentbox"> <!--Beginning of Content div-->
+            <h1 style="position:absolute;left:2%;top:2%;">Who are we</h1>
+            <img src="Assets/AboutImg1.jpg" alt="Staff" class="image" style="position:absolute;left:2%;top:8%;"/>
+            <p style="position:absolute;left:63%;top:8%;">We are an organisation that is trying 
+                to make people aware of the amount of
+                endangered animals in the wild. We are 
+                providing these animals with a habitat 
+                that is not a danger to them. Our team 
+                is soley trying to raise the population
+                of these animals. The New Zoo is trying 
+                to achieve these goals and we need
+                your help so come and visit our zoo and 
+                spread the word.</p>
+            <h1 style="position:absolute;top:39%;left:2%;">Help our cause</h1>
+            <img src="Assets/AboutImg2.jpg" class="image" alt="African Penguins" style="position:absolute;left:2%;top:45%;"/>
+            <p style="position:absolute;left:63%;top:44%;">There are many different ways in which you
+                can help reach our goal. From the simplest
+                of things like telling other people of our goal
+                to donating money to us. We are currently 
+                making merchandise that will be coming
+                soon. You are probably thinking why you
+                should even help us in the first place, well 
+                we are an organisation that helps 
+                endangered animals so if you are an animal 
+                lover sparing a few coins would go a long 
+                way for the animals. </p>
+        </div>  <!--End of Content div-->
+    <div id="footer" style="top:1280px;"> <!--Beginning of Footer-->
+        <div id="footersup"> <!--Beginning of Footer support-->
+            <img src="Assets/Logo.png" alt="Footer Logo" id="footerlogo"/>
+            <h2 id="emailsup">Support@thenewzoo.co.uk</h2>
+        </div> <!--End of Footer support-->
+        
+        <div id="footercr"> <!--Beginning of Footer Clock-->
+            <p id="footerclocktxt"></p>
+            <p> 2015 Copyright &copy; The New Zoo.All Rights Reserved</p>
+        </div> <!--End of Footer Clock-->
+    </div> <!--End of Footer-->
+        </div> <!--End of Content background box-->
+    
+        <div id="loginlb"></div>
+        <form name="login" id="loginform" style="display:none;"> <!--Beginning of login form-->
+            Username: <input type="text" name="userid">
+            <br>
+            Password: <input type="password" name="pswrd">
+            <br>
+            <input type="button" onclick="check(this.form)" value="Login">
+            <input type="reset" value="Reset">
+            <input type="button" onclick="loginext()" value="Cancel">
+        </form> <!--End of login form-->
+    
+  <script> //Beginning of login check
+    function check(form) { 
+        if(form.userid.value == "Username" , "username" && form.pswrd.value == "password123") {
+            window.alert("Well done you were correct")
+        }
+        else {
+            window.alert("Incorrect username or password")
+            }
+    }  </script> <!--End of login check-->
+    
+<script> //Beginning of login button open
+    function loginbtn() {
+        var i = window.document.getElementById('loginform');
+        var u = window.document.getElementById('loginlb');
+        if (i.style.display == 'none') {
+            i.style.display = 'block';
+            u.style.display = 'block';
+        }
+        
+    }
+</script> <!--End of login button open-->
+    
+<script> //Beginning of login button close
+    function loginext() {
+        var i = window.document.getElementById('loginform');
+        var u = window.document.getElementById('loginlb');
+        if (i.style.display == 'block') {
+            i.style.display = 'none';
+            u.style.display = 'none';
+        }
+        
+    } 
+</script> <!--End of login button close-->
+    
+<script type="text/javascript"> //Beginning of footer clock
+    function footerclock() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        m = checkTime(m);
+        window.document.getElementById('footerclocktxt').innerHTML =
+        h + ":" + m;
+        var t = setTimeout(footerclock, 100);
+    }
+    </script>
+    <script type="text/javascript">
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i}; 
+        return i;
+    }
+    </script> <!--End of footer clock-->
+
+</body> <!--End of Body-->
+    
+</html>
+<!--End of HTML-->

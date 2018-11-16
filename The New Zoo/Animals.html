@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html> <!--Beginning of HTML-->
+    
+<head> <!--Beginning of Head-->
+    <title>The New Zoo| Animals</title> <!--Tab Title-->
+    <link type="text/css" rel="stylesheet" href="Styles/Base.css"> <!--Link to external CSS file-->
+    <style>
+        #contenttop {
+            position: absolute;
+            width: 100%;
+            height: 400px;
+            top: 30px;
+            text-align: left;
+            left: 2%;
+        }
+        #contentmid {
+            position: absolute;
+            width: 100%;
+            top: 520px;
+            text-align: right;
+            right: 2%;
+        }
+        #contentbot {
+            position: absolute;
+            width: 100%;
+            top: 950px;
+            text-align: left;
+            left: 2%;
+        }
+    </style>
+</head> <!--End of Head-->
+    
+<body onload="footerclock()"> <!--Beginning of Body-->
+    
+    <div id="navbar"> <!--Beginning of Navbar-->
+        <a href="Index.html"><img src="Assets/Logo.png" alt="Logo" id="navlogo"/></a>
+        
+        <ul> <!--Beginning of Links-->
+            <a href="Index.html"><li>HOME</li></a>
+            <a href="About.html"><li>ABOUT</li></a>
+            <a href="Gallery.html"><li>GALLERY</li></a>
+            <a href="Animals.html"><li class="active">ANIMALS</li></a>
+            <a href="Contact.html"><li>CONTACT US</li></a>
+        </ul> <!--End of Links-->
+
+            <button id="loginbtn" type="button" onclick="loginbtn()">Log in</button>
+        </div> <!--End of login button-->
+    </div> <!--End of Navbar-->
+    
+    <div id="backbox" style="height:1600px;"> <!--Beginning of Content background box-->
+        <div id="contenttop"> <!--Beginning of content top row-->
+            <h1>Elephants</h1>
+            <img src="Assets/AnimalsEleImg.jpg" alt="Elephants"/>
+            <p style="text-align:left;position:absolute;left:40%;right:2%;top:100px;">
+            These elephants are endangered and is one of our first
+            animals that we brought in to the zoo. We currently
+            have 5 adult elephants and 3 baby elephants being 
+            fed and taken care of. This is an animal that can become
+            very voilent if harrassed or abused. However the baby
+            Elephants have become very friendly and trustworthy to the
+            zookeepers. With this we will soon be opening a playground for
+            the children and adults that would like to play with the 
+            Elephants. However our number one priority is to keep them safe
+            so we do not allow visitors to feed them.</p>
+        </div> <!--End of content top row-->
+        <div id="contentmid"> <!--Beginning of content middle row-->
+            <h1>Tigers</h1>
+            <img src="Assets/AnimalsTigImg.jpg" alt="Elephants" style="position:absolute;width:30%;right:2px;"/>
+            <p style="text-align:right;position:absolute;right:31%;left:2%;top:100px;">We are currently raising only 3 Tigers and have 1 cub
+            These tigers are also extinct and we are trying our
+            best to keep them from dying out. This breed of tiger
+            is extremely voilent therefore giving it a hard time to
+            raise them however we are doing our best and
+            doing quite well. The current cub we have has been
+            bred and raised in captivity and has been handled
+            with care by humans, making the cub comfortable
+            with humans approaching her.</p>
+        </div> <!--End of content middle row-->
+        <div id="contentbot"> <!--Beginning of content bottom row-->
+            <h1>African Penguin</h1>
+            <img src="Assets/AnimalsPenImg.jpg" alt="Elephants" style="width:30%;"/>
+            <p style="text-align:left;position:absolute;left:31%;right:2%;top:100px;">African Penguins are found closer south to Africa and are slowly
+            dying out. We have brought them to our zoo and have put them
+            in a large enclosure with lots of water and where the climate is 
+            similar to the sourthern Africa. We have 20 Penguins currently
+            in our zoo and are drastically getting more.</p>
+        </div> <!--End of content bottom row-->
+        <h1 style="position:absolute;left:35%;top:94%;">Many More Coming Soon</h1>
+        
+    <div id="footer" style="top:1600px;"> <!--Beginning of Footer-->
+        <div id="footersup"> <!--Beginning of Footer support-->
+            <img src="Assets/Logo.png" alt="Footer Logo" id="footerlogo"/>
+            <h2 id="emailsup">Support@thenewzoo.co.uk</h2>
+        </div> <!--End of Footer support-->
+        
+        <div id="footercr"> <!--Beginning of Footer Clock-->
+            <p id="footerclocktxt"></p>
+            <p> 2015 Copyright &copy; The New Zoo.All Rights Reserved</p>
+        </div> <!--End of Footer Clock-->
+    </div> <!--End of Footer-->
+    </div>
+    
+        <div id="loginlb"></div>
+        <form name="login" id="loginform" style="display:none;"> <!--Beginning of login form-->
+            Username: <input type="text" name="userid">
+            <br>
+            Password: <input type="password" name="pswrd">
+            <br>
+            <input type="button" onclick="check(this.form)" value="Login">
+            <input type="reset" value="Reset">
+            <input type="button" onclick="loginext()" value="Cancel">
+        </form> <!--End of login form-->
+    
+  <script> //Beginning of login check
+    function check(form) { 
+        if(form.userid.value == "Username" , "username" && form.pswrd.value == "password123") {
+            window.alert("Well done you were correct")
+        }
+        else {
+            window.alert("Incorrect username or password")
+            }
+    }  </script> <!--End of login check-->
+    
+<script> //Beginning of login button open
+    function loginbtn() {
+        var i = window.document.getElementById('loginform');
+        var u = window.document.getElementById('loginlb');
+        if (i.style.display == 'none') {
+            i.style.display = 'block';
+            u.style.display = 'block';
+        }
+        
+    }
+</script> <!--End of login button open-->
+    
+<script> //Beginning of login button close
+    function loginext() {
+        var i = window.document.getElementById('loginform');
+        var u = window.document.getElementById('loginlb');
+        if (i.style.display == 'block') {
+            i.style.display = 'none';
+            u.style.display = 'none';
+        }
+        
+    } 
+</script> <!--End of login button close-->
+    
+<script type="text/javascript"> //Beginning of footer clock
+    function footerclock() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        m = checkTime(m);
+        window.document.getElementById('footerclocktxt').innerHTML =
+        h + ":" + m;
+        var t = setTimeout(footerclock, 100);
+    }
+    </script>
+    <script type="text/javascript">
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i}; 
+        return i;
+    }
+    </script> <!--End of footer clock-->
+
+</body> <!--End of Body-->
+    
+</html>
+<!--End of HTML-->

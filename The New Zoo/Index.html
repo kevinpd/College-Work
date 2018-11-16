@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html> <!--Beginning of HTML-->
+    
+<head> <!--Beginning of Head-->
+    <title>The New Zoo| Home</title> <!--Tab Title-->
+    <link type="text/css" rel="stylesheet" href="Styles/Base.css"> <!--Link to external CSS file-->
+    
+<style>
+    #banner {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        max-height: 320px;
+        z-index: 1;
+    }
+    #content {
+        position: absolute;
+        top: 260px;
+        left: 0px;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    #breakline {
+        position: absolute;
+        top: 125%;
+        left: 0px;
+        width: 100%;
+        height: 5px;
+        background-color: #bfb693;
+    }
+    #findmorebtn {
+        position: absolute;
+        top: 100%;
+        left: 75%;
+        width: 175px;
+        height: 30px;
+        background-color: #578ea1;
+        text-align: center;
+        font-weight: bold;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        border-radius: 5px;
+        padding-top: 7px;
+    }
+    .indeximg {
+        width: 30%;
+    }
+    #seemorebtn {
+        position: absolute;
+        top: 320%;
+        left: 45%;
+        width: 125px;
+        height: 30px;
+        background-color: #578ea1;
+        text-align: center;
+        font-weight: bold;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        border-radius: 5px;
+        padding-top: 7px;
+    }
+</style>
+</head> <!--End of Head-->
+    
+<body onload="footerclock()"> <!--Beginning of Body-->
+
+    <div id="navbar"> <!--Beginning of Navbar-->
+        <a href="Index.html"><img src="Assets/Logo.png" alt="Logo" id="navlogo"/></a>
+        
+        <ul> <!--Beginning of Links-->
+            <a href="Index.html"><li class="active">HOME</li></a>
+            <a href="About.html"><li>ABOUT</li></a>
+            <a href="Gallery.html"><li>GALLERY</li></a>
+            <a href="Animals.html"><li>ANIMALS</li></a>
+            <a href="Contact.html"><li>CONTACT US</li></a>
+        </ul> <!--End of Links-->
+
+            <button id="loginbtn" type="button" onclick="loginbtn()">Log in</button>
+        </div> <!--End of login button-->
+    </div> <!--End of Navbar-->
+    
+    <div id="backbox"> <!--Beginning of Content background box-->
+    <img src="Assets/IndexBanner.jpg" alt="Banner" id="banner"/> <!--Index Banner-->
+    <div id="content"> <!--Beginning of content-->    
+        <h1>Welcome to The New Zoo</h1> 
+        <p>The New Zoo is an upcoming zoo being built in Utah, Zion national Park. Our goal is to bring 
+            population to the endangered animals but allowing them to feel as free as possible. Our zoo provides 
+            our animals with a large open enclosure with a feeding system that allows them to feel like they are 
+            hunting in the wild. Some of our animals have been raised in the zoo and have become very familiar 
+            with humans allowing visitors to pet and feed with the animals.</p>
+        <a href="About.html"><div id="findmorebtn">Find Out More</div></a>
+        <br>
+        <div id="breakline"></div>
+        <br>
+        <h1>Check out our Gallery</h1>
+        <img src="Assets/GalleryImg5.jpg" alt="Zebra" class="indeximg"/>
+        <img src="Assets/GalleryImg7.jpg" alt="Giraffe" class="indeximg"/>
+        <img src="Assets/GalleryImg6.jpg" alt="Rabbit" class="indeximg"/>
+        <a href="Gallery.html"><div id="seemorebtn">See More</div></a>
+    </div> <!--End of content-->
+    
+    <div id="footer"> <!--Beginning of Footer-->
+        <div id="footersup"> <!--Beginning of Footer support-->
+            <img src="Assets/Logo.png" alt="Footer Logo" id="footerlogo" />
+            <h2 id="emailsup">Support@thenewzoo.co.uk</h2>
+        </div> <!--End of Footer support-->
+        
+        <div id="footercr"> <!--Beginning of Footer Clock-->
+            <p id="footerclocktxt"></p>
+            <p> 2015 Copyright &copy; The New Zoo.All Rights Reserved</p>
+        </div> <!--End of Footer Clock-->
+    </div> <!--End of Footer-->
+        </div> <!--End of content background boxs-->
+    
+        <div id="loginlb"></div> <!--Login Lightbox-->
+        <form name="login" id="loginform" style="display:none;"> <!--Beginning of login form-->
+            Username: <input type="text" name="userid">
+            <br>
+            Password: <input type="password" name="pswrd">
+            <br>
+            <input type="button" onclick="check(this.form)" value="Login">
+            <input type="reset" value="Reset">
+            <input type="button" onclick="loginext()" value="Cancel">
+        </form> <!--End of login form-->
+    
+  <script> //Beginning of login check
+    function check(form) { 
+        if(form.userid.value == "Username" , "username" && form.pswrd.value == "password123") {
+            window.alert("Well done you were correct")
+        }
+        else {
+            window.alert("Incorrect username or password")
+            }
+    }  </script> <!--End of login check-->
+    
+<script> //Beginning of login button open
+    function loginbtn() {
+        var i = window.document.getElementById('loginform');
+        var u = window.document.getElementById('loginlb');
+        if (i.style.display == 'none') {
+            i.style.display = 'block';
+            u.style.display = 'block';
+        }
+        
+    }
+</script> <!--End of login button open-->
+    
+<script> //Beginning of login button close
+    function loginext() {
+        var i = window.document.getElementById('loginform');
+        var u = window.document.getElementById('loginlb');
+        if (i.style.display == 'block') {
+            i.style.display = 'none';
+            u.style.display = 'none';
+        }
+        
+    } 
+</script> <!--End of login button close-->
+    
+<script type="text/javascript"> //Beginning of footer clock
+    function footerclock() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        m = checkTime(m);
+        window.document.getElementById('footerclocktxt').innerHTML =
+        h + ":" + m;
+        var t = setTimeout(footerclock, 100);
+    }
+    </script>
+    <script type="text/javascript">
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i}; 
+        return i;
+    }
+    </script> <!--End of footer clock-->
+
+</body> <!--End of Body-->
+    
+</html>
+<!--End of HTML-->

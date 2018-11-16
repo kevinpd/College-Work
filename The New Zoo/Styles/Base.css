@@ -1,0 +1,134 @@
+body{
+    background-color: #306c24;
+    font-family: "Bookman Old Style";
+    font-size: 18px;
+    text-align: center;
+}
+#backbox {
+    position: absolute;
+    align-content: center;
+    background-color: #e6dfc5;
+    top: 0px;
+    left: 10%;
+    width: 80%;
+    height: 1000px;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top:0px;
+    left:0px;
+    background-color: #40952f;
+    z-index: 5;
+}
+#navlogo {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 87px;
+    height: 87px;
+}
+ul {
+    position: absolute;
+    list-style-type: none;
+    top: 0px;
+    left: 50px;
+    margin-top: 0px;
+}
+li {
+    float: left;
+    padding-left: 10px;
+    font-family: "Bookman Old Style";
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 15px;
+    background-color: #40952f;
+    text-align: center;
+    width: 130px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+li:hover , .active {
+    background-color: #e6dfc5;
+    height: 35px;
+}
+#loginbtn {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    height: 50px;
+    width: 75px;
+    font-weight: bold;
+    font-family: "Bookman Old Style";
+    background-color: #40952f;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+#footer {
+    position: absolute;
+    left: 0px;
+    top: 950px;
+    width: 100%;
+    height: 104px;
+    background-color: #25541c;
+    z-index: 5;
+}
+#footersup {
+    position: absolute;
+    left: 7px;
+    top: 11px;
+    width: 500px;
+    height: 10px; 
+}
+#emailsup {
+    position: absolute;
+    top: 5px;
+    left: 88px;
+}
+#footercr {
+    position: absolute;
+    right: 7px;
+    bottom: 0px;
+    font-size: 15px;
+}
+#footerlogo {
+    position: absolute;
+    width: 87px;
+    height: 87px;
+    left: 0px;
+}
+#footerclocktxt {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+form {
+    position: absolute;
+    background-color: lightgray;
+    height: 100px;
+    width: 260px;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    z-index: 11;
+}
+#loginlb {
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    display: none;
+    z-index: 10;
+}
